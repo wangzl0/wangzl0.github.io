@@ -1,0 +1,107 @@
+/* 
+    Document   : btstyle
+    Created on : 2022-9-13, 18:55:18
+    Author     : ¡„¡„
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+#bt1{
+    color: white;
+    font-size: 8vh;
+    letter-spacing: 10px;
+    padding: 70px;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    over-flow:hidden;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+    user-select:none;
+    cursor: default;
+    background-image: url(bt1.png);
+}
+
+
+#bt2{
+    color: white;
+    font-size: 8vh;
+    letter-spacing: 10px;
+    padding: 70px;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    over-flow:hidden;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+    user-select:none;
+    cursor: default;
+    background-image: url(bt2.png); 
+}
+
+
+#bt3{
+    color: white;
+    font-size: 8vh;
+    letter-spacing: 10px;
+    padding: 70px;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    over-flow:hidden;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+    user-select:none;
+    cursor: default;
+    background-image: url(bt3.png); 
+}
+
+#bt4{
+    color: white;
+    font-size: 8vh;
+    letter-spacing: 10px;
+    padding: 70px;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    over-flow:hidden;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+    user-select:none;
+    cursor: default;
+    background-image: url(bt4.png); 
+}
+#bt5{
+    color: white;
+    font-size: 10vh;
+    letter-spacing: 20px;
+    padding: 70px;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    over-flow:hidden;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+    user-select:none;
+    cursor: default;
+    background-image: url(bt5.png); 
+}
+
+
+
+
