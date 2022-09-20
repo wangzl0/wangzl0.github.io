@@ -1,0 +1,328 @@
+/* 
+    Document   : paiban
+    Created on : 2022-9-17, 13:19:18
+    Author     : ¡„¡„
+    Description:
+        Purpose of the stylesheet follows.
+*/
+.sp1{
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 467px;
+    padding: 21px;
+    margin-bottom: -5px;
+}
+.sp11{
+       bottom: 28px;
+    width: 63%;
+    height: 81%;
+    overflow: hidden;
+    position: relative;
+    top: 65px;
+}
+.sp11 img{
+    width: 105%;
+    position: relative;
+    top: -80px;
+    z-index: -11;
+}
+
+/*
+video::-webkit-media-controls {
+
+           display:none !important;
+
+}*/
+.part3 img{
+    width: 50%;
+    
+}
+
+.kapian{
+    border: 1px solid #F6EDD9;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+flex-wrap:wrap;
+}
+.card{
+  
+      position: relative;
+      width: 280px;
+      height: 375px;
+      margin: 14px 70px 25px;
+      display: flex;
+      align-items:flex-end;
+      text-align: center;
+      color: whitesmoke;
+      box-shadow: 0 1px 1px rgba(0,0,0,0.1),
+         0 4px 4px rgba(0,0,0,0.1),
+         0 16px 16px rgba(0,0,0,0.1),
+         0 32px 32px rgba(0,0,0,0.1),
+         0 64px 64px rgba(0,0,0,0.1);
+      overflow: hidden;
+}
+
+.card::before{
+    content:'';
+    width: 100%;
+    height: 110%;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    background-size: cover;
+    background-position: 0 0;
+    transition: transform 1s cubic-bezier(0.19,1,0.22,1);
+}
+
+.card:nth-child(1)::before{
+    background-image: url(fl.jpg)
+}
+.card:nth-child(2)::before{
+    background-image: url(nj.jpg)
+}
+
+.card::after{
+    content:"";
+    display: block;
+    width: 100%;
+    height: 200%;
+    background: linear-gradient(to bottom,
+        rgba(0,0,0,0.1)0%,
+        rgba(0,0,0,0.25)55%,
+        rgba(0,0,0,0.8)100%);
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translateY(0);
+    transition: transform 1.4s cubic-bezier(0.19,1,0.22,1);
+}
+
+.card .flnj1{
+    width: 100%;
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+    position: relative;
+    z-index: 1;
+    padding: 35px 8px;
+    transform: translateY(18%);
+    transition: transform 0.7s cubic-bezier(0.19,1,0.22,1);
+}
+.card .flnj2{
+    width: 100%;
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+    position: relative;
+    z-index: 1;
+    padding: 35px 8px;
+    transform: translateY(3%);
+    transition: transform 0.7s cubic-bezier(0.19,1,0.22,1);
+}
+
+
+
+.card h2{
+    font-size: 31px;
+    font-weight: bold;
+    position: relative;
+    top: 10px;
+}
+.card span{
+      font-size: 17px;
+    letter-spacing: 1px;
+    width: 80%;
+    line-height: 25px;
+    margin-top: 36px;
+    text-align: justify;
+    text-indent: 2em;
+}
+
+.card .flnj1 *:not(h2){
+    opacity: 0;
+    transform: translateY(20px);
+    transition: transform 0.7s cubic-bezier(0.19,1,0.22,1),opacity 0.7s
+        cubic-bezier(0.19,1,0.22,1);
+}
+
+.card .flnj2 *:not(h2){
+    opacity: 0;
+    transform: translateY(20px);
+    transition: transform 0.7s cubic-bezier(0.19,1,0.22,1),opacity 0.7s
+        cubic-bezier(0.19,1,0.22,1);
+}
+
+.card:hover{
+    align-items:center;
+}
+.card:hover::before{
+    transform: translateY(-5%);
+}
+.card:hover::after{
+    transform: translateY(-40%);
+}
+.card:hover .flnj1 *:not(h2){
+    opacity: 1;
+    transform: translateY(0px);
+    transition-delay: 0.1s;
+}
+.card:hover .flnj2 *:not(h2){
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.1s;
+}
+
+
+.swipe{
+    position: relative;
+    width: 800px;
+    height: 500px;
+    text-align: center;
+    overflow: hidden;
+    left: 18%;
+}
+.swipe ul{
+    margin: 10px 0;
+    padding: 0;
+    width: calc(800px * 4);
+    transition:0.5s;
+}
+.swipe li{
+    float: left;
+    width: 800px;
+    height: 500px;
+
+    list-style: none;
+    line-height: 500px;
+    font-size: 50px;
+    background-position: center;
+    
+}
+.swipe li:nth-child(1){
+    background-image: url(lb1.png);
+    background-size: cover;
+    overflow: hidden;
+    
+  
+}
+.swipe li:nth-child(2){
+    background-image: url(lb2.png);
+    background-size: cover;
+    overflow: hidden;
+}
+.swipe li:nth-child(3){
+    background-image: url(lb3.png);
+    background-size: cover;
+    overflow: hidden;
+}
+.swipe li:nth-child(4){
+    background-image: url(lb4.png);
+    background-size: cover;
+    overflow: hidden;
+}
+
+.swipe label[for^="indicator"]{
+    position: absolute;
+    top: 477px;
+    width: 17px;
+    height: 13px;
+
+    border-radius: 32%;
+    cursor: pointer;
+    transition: 0.4s;
+    border: solid 2px white;
+}
+.swipe label:hover{
+    background-color: #fff;
+}
+.swipe label[for="indicator1"]{
+    left: 44%;
+}
+.swipe label[for="indicator2"]{
+    left: 49%;
+}
+.swipe label[for="indicator3"]{
+    left: 54%;
+}
+.swipe label[for="indicator4"]{
+    left: 59%;
+}
+#indicator1:checked~ul{
+    margin-left: 0;
+}
+#indicator2:checked~ul{
+    margin-left: -800px;
+}
+#indicator3:checked~ul{
+    margin-left: -1600px;;
+}
+#indicator4:checked~ul{
+    margin-left: -2400px;
+}
+
+
+
+
+.road{
+    position: relative;
+    top: 390px;
+    height: 300px;
+    width: 100%;
+    background-image: url(road.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.jw{
+   text-align: center;
+    height: 451px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top: 299px;
+    padding: 20px;
+    background-color: #393733;
+    color: white;
+    line-height: 28px;
+    letter-spacing: 1px;
+
+}
+
+
+
+.jcfd{
+       font-size: 33px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    line-height: 10px;
+}
+
+.gjj{
+       color:#BF5747;
+       font-weight: 600;
+}
+
+.rw{
+     color:#476970;
+       font-weight: 600;
+}
+
+.p1{
+    text-align: center;
+
+}
+.p1 span{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color:#BF5747;
+    position: relative;
+    top: 7.5;
+    line-height: 120px;
+    padding-top: 15px;
+}
